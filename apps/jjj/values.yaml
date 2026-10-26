@@ -10,6 +10,9 @@ secret:
   enabled: true
   name: "jjj-secret"
 
+ingress:
+  enabled: true
+  host: "api.triplej.cloud"
 
 # MySQL
 mysql:
