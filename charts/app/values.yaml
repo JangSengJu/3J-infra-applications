@@ -42,7 +42,7 @@ mysql:
   username: app
 
   storage:
-    storageClassName: longhorn
+    storageClassName: local-path
     size: 10Gi
 
 
@@ -56,5 +56,5 @@ redis:
     pullPolicy: IfNotPresent
 
   storage:
-    storageClassName: longhorn
+    storageClassName: local-path
     size: 5Gi
