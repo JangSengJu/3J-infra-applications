@@ -8,7 +8,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/sungjujjang/sungju-infra-applications.git
+        repoURL: https://github.com/JangSengJu/3J-infra-applications.git
         revision: HEAD
 
         files:
@@ -24,7 +24,7 @@ spec:
       sources:
 
         # 공통 Helm Chart
-        - repoURL: https://github.com/sungjujjang/sungju-infra-applications.git
+        - repoURL: https://github.com/JangSengJu/3J-infra-applications.git
           targetRevision: HEAD
           path: charts/app
 
@@ -33,7 +33,7 @@ spec:
               - '$values/{{path}}/values.yaml'
               
         # 앱별 values.yaml
-        - repoURL: https://github.com/sungjujjang/sungju-infra-applications.git
+        - repoURL: https://github.com/JangSengJu/3J-infra-applications.git
           targetRevision: HEAD
           ref: values
 
