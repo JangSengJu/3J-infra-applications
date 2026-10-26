@@ -1,0 +1,38 @@
+# Application
+replicaCount: 1
+
+image:
+  repository: sungjujjang/jjj
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+secret:
+  enabled: true
+  name: "jjj-secret"
+
+
+# MySQL
+mysql:
+  enabled: true
+
+  image:
+    repository: mysql
+    tag: "8.4"
+    pullPolicy: IfNotPresent
+
+  database: app
+  username: app
+
+  storage:
+    size: 5Gi
+
+redis:
+  enabled: true
+
+  image:
+    repository: redis
+    tag: "7-alpine"
+    pullPolicy: IfNotPresent
+
+  storage:
+    size: 5Gi
