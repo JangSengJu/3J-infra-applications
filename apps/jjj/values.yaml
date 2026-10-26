@@ -3,7 +3,7 @@ replicaCount: 3
 
 image:
   repository: sungjujjang/jjj
-  tag: "20261026-052740"
+  tag: "20261026-063713"
   pullPolicy: IfNotPresent
 
 secret:
